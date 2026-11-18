@@ -1,0 +1,60 @@
+Creating tasks in order A, B, C, D, E
+  created A (prio 1)
+  created B (prio 2)
+  created C (prio 3)
+  created D (prio 4)
+  created E (prio 5)
+All five Ready. Releasing start gate.
+
+[   74 ms] Task E (prio 5) tank 1: partial = 7.0686
+[   95 ms] Task E (prio 5) tank 2: partial = 14.1372
+[  115 ms] Task E (prio 5) tank 3: partial = 21.2058
+[  115 ms] Task E FINAL SUM = 21.2058  <-- finished #1
+[  135 ms] Task D (prio 4) k=0: partial = 1.0000
+[  155 ms] Task D (prio 4) k=1: partial = 5.0000
+[  176 ms] Task D (prio 4) k=2: partial = 13.0000
+[  176 ms] Task D FINAL SUM = 13.0000  <-- finished #2
+[  196 ms] Task C (prio 3) n=1: partial = 4.0000
+[  216 ms] Task C (prio 3) n=2: partial = 6.5000
+[  236 ms] Task C (prio 3) n=3: partial = 8.5000
+[  257 ms] Task C (prio 3) n=4: partial = 10.2500
+[  277 ms] Task C (prio 3) n=5: partial = 11.8500
+[  277 ms] Task C FINAL SUM = 11.8500  <-- finished #3
+[  297 ms] Task B (prio 2) m=1: partial = 2.0000
+[  317 ms] Task B (prio 2) m=2: partial = 4.0000
+[  337 ms] Task B (prio 2) m=3: partial = 5.3333
+[  358 ms] Task B (prio 2) m=4: partial = 6.0000
+[  378 ms] Task B (prio 2) m=5: partial = 6.2667
+[  378 ms] Task B FINAL SUM = 6.2667  <-- finished #4
+[  398 ms] Task A (prio 1) x=0: partial = 5
+[  418 ms] Task A (prio 1) x=1: partial = 12
+[  438 ms] Task A (prio 1) x=2: partial = 21
+[  459 ms] Task A (prio 1) x=3: partial = 32
+[  479 ms] Task A (prio 1) x=4: partial = 45
+[  499 ms] Task A (prio 1) x=5: partial = 60
+[  519 ms] Task A (prio 1) x=6: partial = 77
+[  539 ms] Task A (prio 1) x=7: partial = 96
+[  559 ms] Task A (prio 1) x=8: partial = 117
+[  579 ms] Task A (prio 1) x=9: partial = 140
+[  600 ms] Task A (prio 1) x=10: partial = 165
+[  620 ms] Task A (prio 1) x=11: partial = 192
+[  640 ms] Task A (prio 1) x=12: partial = 221
+[  660 ms] Task A (prio 1) x=13: partial = 252
+[  680 ms] Task A (prio 1) x=14: partial = 285
+[  700 ms] Task A (prio 1) x=15: partial = 320
+[  720 ms] Task A (prio 1) x=16: partial = 357
+[  741 ms] Task A (prio 1) x=17: partial = 396
+[  761 ms] Task A (prio 1) x=18: partial = 437
+[  781 ms] Task A (prio 1) x=19: partial = 480
+[  801 ms] Task A (prio 1) x=20: partial = 525
+[  801 ms] Task A FINAL SUM = 525.0000  <-- finished #5
+
+======== SUMMARY ========
+Task | Priority | Expected | Printed  | Result
+  A  |    1     | 525.0000 | 525.0000 | PASS
+  B  |    2     |   6.2667 |   6.2667 | PASS
+  C  |    3     |  11.8500 |  11.8500 | PASS
+  D  |    4     |  13.0000 |  13.0000 | PASS
+  E  |    5     |  21.2060 |  21.2058 | PASS
+Completion order: E, D, C, B, A  (expected E, D, C, B, A) -> PASS
+=========================
